@@ -67,7 +67,7 @@ This lab introduces you to Amazon Elastic Mapreduce ([Amazon EMR](https://aws.am
 
 * For Root device EBS volume size: leave the default setting
 * In Node type dialog:
-    For Master node, choose m3.xlarge as 1
+** For Master node, choose m3.xlarge as 1
     For Core node, choose m3.xlarge as 2
     For Task node, cancel the instance requirement
 
