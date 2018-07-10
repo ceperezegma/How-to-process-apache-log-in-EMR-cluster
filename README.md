@@ -46,14 +46,10 @@ This lab introduces you to Amazon Elastic Mapreduce ([Amazon EMR](https://aws.am
 
 2.6 	Click **Configure**.
 * For Script S3 location, type the location of the Pig script. For example:s3://elasticmapreduce/samples/pig-apache/do-reports2.pig.
-
-* For Input S3 location, type the location of the input data. For example:s3://elasticmapreduce/samples/pig-apache/input.
-* 
+* For Input S3 location, type the location of the input data. For example:s3://elasticmapreduce/samples/pig-apache/.
 * For Output S3 location, type or browse to the name of your Amazon S3 output bucket.
 * For Arguments, leave the field blank. 
-
 * For Action on failure, select **Terminate cluster**.
-
 * Click **Add**.
 
 ![3.png](/images/3.png)
