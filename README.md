@@ -72,7 +72,7 @@ This lab introduces you to Amazon Elastic Mapreduce ([Amazon EMR](https://aws.am
 2.11    In Step3: General Cluster Setting: In General Configuration dialog
 * For Cluster name: type **My first EMR Cluster**
 * Leave the default setting
-* For Logging: Please change the path to the log folder which you created before.
+* For Logging: Please change the path to the log folder which you created before. For example:ecv-training-annie/apache-log-analysis/log/.
 
 2.11    In Tag dialog
 * For Key: type **Name**
