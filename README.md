@@ -1,9 +1,9 @@
 # How to Process Apache Log in EMR Cluster
 
 ## Scenario
-Analysis apache log to get the insight which knew what kind of visitor to your website. Also to get more information for setup the customization content for the visitors.
+Analysis of apache log to get the insight which knew what kind of visitor to your website. Also to get more information for setup the customization content for the visitors.
 
-This lab introduces you to Amazon Elastic Mapreduce ([Amazon EMR](https://aws.amazon.com/emr/)) using the AWS Management Console. Also let you know how to engage S3 with EMR to process the apache log.
+This lab introduces you to Amazon Elastic MapReduce ([Amazon EMR](https://aws.amazon.com/emr/)) using the AWS Management Console. Also, let you know how to engage S3 with EMR to process the apache log.
 
 
 ## Prerequisites
@@ -13,11 +13,11 @@ This lab introduces you to Amazon Elastic Mapreduce ([Amazon EMR](https://aws.am
 
 ## Lab tutorial
 ### Upload files to S3
-1.1. 	In the **AWS Management Console**, on the **service** menu, click **S3**.
+1.1.     In the **AWS Management Console**, on the **service** menu, click **S3**.
 
-1.2. 	Click **Create bucket** button.
+1.2.     Click **Create bucket** button.
 
-1.3. 	For bucket name, type **ecv-training-your-name**.
+1.3.     For bucket name, type **ecv-training-your-name**.
 
 1.4.    Click **Create**.
 
@@ -25,26 +25,26 @@ This lab introduces you to Amazon Elastic Mapreduce ([Amazon EMR](https://aws.am
 
 1.6.    Click the **apache-log-analysis** folder which you created, click **Create folder** button to create second layer folders **log** and **output**.
 
-1.7.    Click **Upload** to upload two file which you download from Github.
+1.7.    Click **Upload** to upload two files which you download from Github.
 
 ![1.png](/images/1.png)
 
 ### Launch an EMR cluster
-2.1. 	In the **AWS Management Console**, on the **service** menu, click **EMR**.
+2.1.     In the **AWS Management Console**, on the **service** menu, click **EMR**.
 
-2.2. 	Click **Create Cluster**.
+2.2.     Click **Create Cluster**.
 
-2.3. 	Click **Go to advanced options**.
+2.3.     Click **Go to advanced options**.
 
-2.4 	In Step1: Software and Steps: for Release, choose **EMR 4.7.0**.
+2.4     In Step1: Software and Steps: for Release, choose **EMR 4.7.0**.
 
 >It will automatically select Hadoop 2.7.2/Hive 1.0.0/Hue 3.7.1/Pig 0.14.0.
 
-2.5. 	In the Add Step dialog, click **Auto-terminate cluster after the last step is completed**, select **Pig program** for step type.
+2.5.     In the Add Step dialog, click **Auto-terminate cluster after the last step is completed**, select **Pig program** for step type.
 
 ![2.png](/images/2.png)
 
-2.6 	Click **Configure**.
+2.6     Click **Configure**.
 * For Script S3 location, type the location of the Pig script. For example:s3://elasticmapreduce/samples/pig-apache/do-reports2.pig.
 
 * For Input S3 location, type the location of the input data. For example:s3://elasticmapreduce/samples/pig-apache/input.
@@ -58,9 +58,9 @@ This lab introduces you to Amazon Elastic Mapreduce ([Amazon EMR](https://aws.am
 
 ![3.png](/images/3.png)
 
-2.8 	Click **Next** button.
+2.8     Click **Next** button.
 
-2.9 	In Step2: Hardware Configuration:
+2.9     In Step2: Hardware Configuration:
 * For Network: leave the default setting
 
 * For Subnet: leave the default setting
@@ -94,7 +94,7 @@ This lab introduces you to Amazon Elastic Mapreduce ([Amazon EMR](https://aws.am
 
 ![6.png](/images/6.png)
 
-2.16    After completely this lab, the elapsed time is around 12 minutes, it means you only pay during computing time, after computing it will auto-terminated.
+2.16    After completing this lab, the elapsed time is around 12 minutes, it means you only pay during computing time, after computing, it will auto-terminated.
 
 ![7.png](/images/7.png)
 
@@ -104,7 +104,7 @@ Congratulations! You now have learned how to:
 * Logged into Amazon Management Console
 * Create S3 bucket and upload files into it
 * Create an EMR cluster to process the data
-* Find your resault in the S3 bucket
+* Find your result in the S3 bucket
 
 
 
